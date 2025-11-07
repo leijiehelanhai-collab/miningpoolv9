@@ -138,10 +138,10 @@ export default function MiningPage() {
                     “实时”未领利息: 
                     <strong>
                       {typeof pendingRewards === 'bigint' ? formatEther(pendingRewards).slice(0, 8) : '0'}
-                    </strong> MRT
+                    </strong> 坤鸡币
                   </p>
                   <p style={{ color: '#666', fontSize: '0.9em', marginTop: '5px' }}>
-                    (已领到钱包: {rewardTokenBalance ? rewardTokenBalance.formatted.slice(0, 8) : '0'} MRT)
+                    (已领到钱包: {rewardTokenBalance ? rewardTokenBalance.formatted.slice(0, 8) : '0'} 坤鸡币)
                   </p>
                 </div>
 
@@ -162,7 +162,7 @@ export default function MiningPage() {
                 <div style={{ margin: '20px 0' }}>
                   <h3 style={{ margin: '0 0 10px 0' }}>领取 (Claim)</h3>
                   <button onClick={handleClaim} disabled={isPending} style={{ ...buttonStyle, backgroundColor: '#EF4444' }}>
-                    {isPending ? '处理中...' : '领取我的 MRT'}
+                    {isPending ? '处理中...' : '领取我的 坤鸡币'}
                   </button>
                 </div>
                 {/* --- 赎回操作 (完整版!) --- */}
