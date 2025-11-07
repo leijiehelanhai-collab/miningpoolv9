@@ -209,7 +209,7 @@ export default function DexPage() {
                       style={swapInputStyle}
                     />
                     <span style={tokenLabelStyle}>
-                      {isBNBToMRT ? 'tBNB' : 'MRT'}
+                      {isBNBToMRT ? 'tBNB' : '坤鸡币'}
                     </span>
                   </div>
                 </div>
