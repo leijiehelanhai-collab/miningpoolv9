@@ -36,7 +36,7 @@ export default function InvitePage() {
     query: { enabled: !!address }
   });
   
-  const isUserRegistered = userReferrer && userReferrer !== zeroAddress;
+  const isUserRegistered = typeof userReferrer === 'string' && userReferrer !== zeroAddress;
   
   // --- 🚀 5. “邀请”逻辑 (V9.1 完整版) ---
   const handleRegister = () => {
